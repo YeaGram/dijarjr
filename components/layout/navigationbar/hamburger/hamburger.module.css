@@ -1,0 +1,26 @@
+.hamburgerContainer {
+   @apply relative w-10 h-7 cursor-pointer;
+}
+.hamburgerContainer span {
+   @apply w-full absolute h-1 bg-white rotate-0 transition-all;
+}
+.hamburgerContainer span:first-child {
+   @apply top-0;
+}
+.hamburgerContainer span:nth-child(2) {
+   @apply top-1/2 -translate-y-1/2 scale-100;
+}
+.hamburgerContainer span:last-child {
+   @apply bottom-0;
+}
+
+/* Active */
+.hamburgerActive span:first-child {
+   @apply rotate-45 top-1/2 -translate-y-1/2;
+}
+.hamburgerActive span:nth-child(2) {
+   @apply scale-0;
+}
+.hamburgerActive span:last-child {
+   @apply -rotate-45 bottom-1/2 translate-y-1/2;
+}
