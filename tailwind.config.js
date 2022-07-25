@@ -5,7 +5,14 @@ module.exports = {
       "./components/**/*.{js,ts,jsx,tsx}",
    ],
    theme: {
-      extend: {},
+      extend: {
+         dropShadow: {
+            mydropOne: "1px 1px 1px rgba(0,0,0, 1)",
+         },
+         boxShadow: {
+            myboxOne: "5px 0px 20px 0px rgba(0,0,0, .3)",
+         },
+      },
    },
    plugins: [],
 };
