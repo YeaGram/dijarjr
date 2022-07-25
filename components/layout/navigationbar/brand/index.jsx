@@ -1,9 +1,11 @@
 import Link from "next/link";
 export default function Brand({ children, className }) {
    return (
-      <Link href="#">
+      <Link href="/">
          <a>
-            <p className={`font-semibold ${className}`}>{children}</p>
+            <p className={`font-semibold font-Poppins ${className} `}>
+               {children}
+            </p>
          </a>
       </Link>
    );

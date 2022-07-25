@@ -16,14 +16,12 @@ export default function Home() {
             <link rel="icon" href="/favicon.ico" />
          </Head>
 
-         <div>
+         <nav>
             <NavMobile active={active} handleHamburger={handleHamburger} />
-         </div>
+         </nav>
          <div
             className={`${
-               !active
-                  ? "translate-x-[0px]"
-                  : "translate-x-[320px] brightness-75 "
+               !active ? "translate-x-[0px]" : "translate-x-[83.333333%]"
             } transition-all ease-in-out duration-700 w-full h-full`}
          >
             <header>

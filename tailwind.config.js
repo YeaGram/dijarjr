@@ -6,6 +6,10 @@ module.exports = {
    ],
    theme: {
       extend: {
+         fontFamily: {
+            Poppins: ["Poppins"],
+            Montserrat: ["Montserrat"],
+         },
          dropShadow: {
             mydropOne: "1px 1px 1px rgba(0,0,0, 1)",
          },
