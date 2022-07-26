@@ -15,7 +15,11 @@ export default function Hero() {
                      Saya adalah orang yang membangun website ini dan ini
                      merupakan website pribadi saya.
                   </p>
-                  <CallButton varians="fills" className="w-fit text-white">
+                  <CallButton
+                     varians="fills"
+                     className="w-fit text-white"
+                     href="#profile"
+                  >
                      Jelajahi
                   </CallButton>
                </div>

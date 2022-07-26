@@ -23,14 +23,15 @@ export default function NavigationBar({
                <div
                   className={`order-2 items-center flex-[2] justify-center sm:flex space-x-4 hidden w-auto transition-all `}
                >
-                  <NavItems href="#">About</NavItems>
-                  <NavItems href="#">Skill</NavItems>
-                  <NavItems href="#">MyProject</NavItems>
+                  <NavItems href="#profile">Profile</NavItems>
+                  <NavItems href="#skill">Skill</NavItems>
+                  <NavItems href="#myproject">MyProject</NavItems>
                </div>
                <div className="order-3 hidden sm:flex flex-1 items-center justify-end ">
                   <CallButton
                      varians={winPos > winHeight ? "fills" : "outlines"}
                      className={``}
+                     href="#kontak"
                   >
                      Hubungi!
                   </CallButton>

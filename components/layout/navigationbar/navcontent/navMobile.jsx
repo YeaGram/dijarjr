@@ -56,12 +56,12 @@ export default function NavMobile({ handleHamburger, active }) {
             className={`flex flex-col text-contentMain-600 hover:text-contentMain-400 delay-[0ms] duration-75 `}
          >
             <NavItems
-               href="#"
+               href="#profile"
                className={`transition-all duration-700 delay-[150ms] ease-bounceOne  ${
                   active ? "translate-x-0" : "-translate-x-1/2"
                }`}
             >
-               About
+               Profile
             </NavItems>
             <span
                className={`${
@@ -69,7 +69,7 @@ export default function NavMobile({ handleHamburger, active }) {
                } transition-all duration-700 h-[1px] delay-150 block bg-gray-200`}
             ></span>
             <NavItems
-               href="#"
+               href="#skill"
                className={`transition-all duration-700 delay-[250ms] ease-bounceOne ${
                   active ? "translate-x-0" : "-translate-x-1/2"
                }`}
@@ -82,7 +82,7 @@ export default function NavMobile({ handleHamburger, active }) {
                } transition-all duration-700 h-[1px] delay-150 block bg-gray-200`}
             ></span>
             <NavItems
-               href="#"
+               href="#myproject"
                className={`transition-all duration-700 delay-[350ms] ease-bounceOne ${
                   active ? "translate-x-0" : "-translate-x-1/2"
                }`}
@@ -99,7 +99,11 @@ export default function NavMobile({ handleHamburger, active }) {
                   active ? "translate-x-0" : "-translate-x-1/2"
                }`}
             >
-               <CallButton varians="fills" className={`my-5 text-white w-fit `}>
+               <CallButton
+                  varians="fills"
+                  className={`my-5 text-white w-fit `}
+                  href="#kontak"
+               >
                   Hubungi
                </CallButton>
             </span>
