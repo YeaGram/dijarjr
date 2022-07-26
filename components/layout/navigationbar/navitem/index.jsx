@@ -9,7 +9,6 @@ export default function NavItems({ children, href, className }) {
                {children}
             </a>
          </Link>
-         <hr />
       </>
    );
 }

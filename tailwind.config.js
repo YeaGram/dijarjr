@@ -6,6 +6,11 @@ module.exports = {
    ],
    theme: {
       extend: {
+         transitionTimingFunction: {
+            cubicOne: " cubic-bezier(0.78, 0.11, 0.1, 0.76)",
+            cubicTwo: " cubic-bezier(0.44, 0.14, 0.18, 0.88)",
+            bounceOne: " cubic-bezier(.57,1.37,.44,1.16)",
+         },
          fontFamily: {
             Poppins: ["Poppins"],
             Montserrat: ["Montserrat"],

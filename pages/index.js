@@ -22,7 +22,7 @@ export default function Home() {
          <div
             className={`${
                !active ? "translate-x-[0px]" : "translate-x-[83.333333%]"
-            } transition-all ease-in-out duration-700 w-full h-full`}
+            } transition-all ease-cubicTwo duration-700 w-full h-full`}
          >
             <header>
                <Header active={active} handleHamburger={handleHamburger} />
