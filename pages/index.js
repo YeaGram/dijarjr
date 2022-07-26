@@ -4,6 +4,7 @@ import Header from "../components/layout/header";
 import { useState, useEffect } from "react";
 import NavMobile from "../components/layout/navigationbar/navcontent/navMobile";
 import Hamburger from "../components/layout/navigationbar/hamburger";
+import Hero from "../components/layout/hero";
 export default function Home() {
    const [active, setActive] = useState(false);
    const handleHamburger = () => {
@@ -49,19 +50,22 @@ export default function Home() {
             className={`${
                !active ? "translate-x-[0px]" : "translate-x-[83.333333%]"
             } transition-all ease-cubicTwo duration-700 fixed ${
-               winPos > 100 ? "opacity-0" : "opacity-100"
-            } top-0 left-0 right-0 z-20`}
+               winPos > winHeight
+                  ? "opacity-0  sm:bg-emerald-500"
+                  : "opacity-100 p-10"
+            } sm:opacity-100  top-0 left-0 right-0 z-20`}
          >
             <Header active={active} handleHamburger={handleHamburger} />
          </header>
+         <Hero />
 
          {/* FLoatingHamburgerButton */}
          <div
             className={`${
                !active ? "translate-x-[0px]" : "translate-x-[83.333333%]"
-            } transition-all ease-cubicTwo duration-700 fixed bottom-0 p-4 right-0 m-3 rounded-lg bg-green-500 block z-10 ${
-               winPos > 100 ? "opacity-100" : "opacity-0"
-            }`}
+            } transition-all ease-cubicTwo duration-700 fixed bottom-0 p-4 right-0 m-3 rounded-lg bg-emerald-500 block z-10 ${
+               winPos > winHeight ? "opacity-100" : "opacity-0"
+            } sm:opacity-0 sm:hidden`}
             onClick={handleHamburger}
          >
             <Hamburger active={active} />

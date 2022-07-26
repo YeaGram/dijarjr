@@ -6,6 +6,9 @@ module.exports = {
    ],
    theme: {
       extend: {
+         backgroundImage: {
+            hero: "url('/herroo.webp')",
+         },
          transitionTimingFunction: {
             cubicOne: " cubic-bezier(0.78, 0.11, 0.1, 0.76)",
             cubicTwo: " cubic-bezier(0.44, 0.14, 0.18, 0.88)",

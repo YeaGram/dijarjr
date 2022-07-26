@@ -7,7 +7,9 @@ import NavMobile from "./navMobile";
 export default function NavigationBar({ handleHamburger, active }) {
    return (
       <div className="">
-         <div className={`px-5 py-5 bg-green-600 flex item-center text-white`}>
+         <div
+            className={`px-5 py-5 bg-transparent flex item-center text-white shadow-myboxOne`}
+         >
             <nav className="container flex justify-between item-center mx-auto">
                <div className="flex-1 sm:order-1 order-2 justify-end sm:justify-start flex items-center">
                   <Brand className="text-2xl">DijarJr</Brand>
