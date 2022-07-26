@@ -4,7 +4,7 @@ export default function NavItems({ children, href, className }) {
       <>
          <Link href={href}>
             <a
-               className={`sm:py-1 py-4 px-4 transition-all rounded-lg  sm:hover:bg-green-800 font-Poppins ${className}`}
+               className={`sm:py-1 py-4 px-4 transition-all rounded-lg font-Poppins ${className}`}
             >
                {children}
             </a>

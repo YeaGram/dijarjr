@@ -1,10 +1,15 @@
 import Hero from "../hero";
 import NavigationBar from "../navigationbar/navcontent";
 
-export default function Header({ active, handleHamburger }) {
+export default function Header({ active, handleHamburger, winPos, winHeight }) {
    return (
-      <>
-         <NavigationBar active={active} handleHamburger={handleHamburger} />{" "}
-      </>
+      <div>
+         <NavigationBar
+            active={active}
+            handleHamburger={handleHamburger}
+            winPos={winPos}
+            winHeight={winHeight}
+         />{" "}
+      </div>
    );
 }

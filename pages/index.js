@@ -51,11 +51,16 @@ export default function Home() {
                !active ? "translate-x-[0px]" : "translate-x-[83.333333%]"
             } transition-all ease-cubicTwo duration-700 fixed ${
                winPos > winHeight
-                  ? "opacity-0  sm:bg-emerald-500"
-                  : "opacity-100 p-10"
-            } sm:opacity-100  top-0 left-0 right-0 z-20`}
+                  ? "opacity-0  sm:bg-contentMain-500"
+                  : "opacity-100"
+            } sm:opacity-100  top-0 left-0 right-0 z-20 backdrop-blur-xl`}
          >
-            <Header active={active} handleHamburger={handleHamburger} />
+            <Header
+               active={active}
+               handleHamburger={handleHamburger}
+               winPos={winPos}
+               winHeight={winHeight}
+            />
          </header>
          <Hero />
 
@@ -63,7 +68,7 @@ export default function Home() {
          <div
             className={`${
                !active ? "translate-x-[0px]" : "translate-x-[83.333333%]"
-            } transition-all ease-cubicTwo duration-700 fixed bottom-0 p-4 right-0 m-3 rounded-lg bg-emerald-500 block z-10 ${
+            } transition-all ease-cubicTwo duration-700 fixed bottom-0 p-4 right-0 m-3 rounded-lg bg-contentMain-500 block z-10 ${
                winPos > winHeight ? "opacity-100" : "opacity-0"
             } sm:opacity-0 sm:hidden`}
             onClick={handleHamburger}
