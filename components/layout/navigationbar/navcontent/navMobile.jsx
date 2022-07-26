@@ -4,7 +4,7 @@ import NavItems from "../navitem";
 export default function NavMobile({ handleHamburger, active }) {
    return (
       <div
-         className={`order-1 flex-[2] fixed flex-col text-black flex bg-slate-100 w-10/12 px-5 z-10 transition-all ease-cubicTwo duration-700 top-0 left-0 bottom-0  ${
+         className={`order-1 flex-[2] fixed flex-col text-black flex bg-slate-100 w-10/12 px-5 z-30 transition-all ease-cubicTwo duration-700 top-0 left-0 bottom-0  ${
             active
                ? "translate-x-0 shadow-myboxOne"
                : "-translate-x-[100%] shadow-none"
