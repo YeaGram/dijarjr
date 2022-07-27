@@ -18,7 +18,7 @@ export default function Card({ title, subtitle, links, children }) {
          <div className="flex-1 flex flex-col justify-end">
             <CallButton
                href={links}
-               className="text-center text-white bg-[#22AFA1] font-normal rounded-md"
+               className="text-center text-white bg-[#22afa1] font-normal rounded-md"
                varians="fills"
             >
                Kunjungi

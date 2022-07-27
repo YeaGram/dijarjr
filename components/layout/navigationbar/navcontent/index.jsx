@@ -12,9 +12,9 @@ export default function NavigationBar({
    winHeight,
 }) {
    return (
-      <div className="">
+      <div className={``}>
          <div
-            className={`px-5 py-4 bg-transparent flex item-center text-white shadow-myboxOne`}
+            className={`px-5 py-4 bg-transparent flex item-center text-white shadow-myboxOne `}
          >
             <nav className="container sm:px-10 flex justify-center sm:justify-between item-center mx-auto ">
                <div className="flex-1 order-2 sm:order-1 justify-end sm:justify-start flex items-center">
@@ -37,7 +37,7 @@ export default function NavigationBar({
                   </CallButton>
                </div>
                <div
-                  className="block sm:hidden order-1"
+                  className="block sm:hidden order-1 "
                   onClick={handleHamburger}
                >
                   <Hamburger active={active} />

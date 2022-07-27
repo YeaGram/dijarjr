@@ -8,6 +8,7 @@ import Hero from "../components/layout/hero";
 import MyProject from "../components/content/myproject";
 import Profile from "../components/content/profile";
 import Skill from "../components/content/skills";
+import Contact from "../components/content/cotact";
 export default function Home() {
    const [active, setActive] = useState(false);
    const handleHamburger = () => {
@@ -54,7 +55,7 @@ export default function Home() {
                !active ? "translate-x-[0px]" : "translate-x-[83.333333%]"
             } transition-all ease-cubicTwo duration-700 fixed ${
                winPos > winHeight
-                  ? "opacity-0  sm:bg-contentMain-500"
+                  ? "opacity-0 -translate-y-full sm:translate-y-0  sm:bg-contentMain-500"
                   : "opacity-100"
             } sm:opacity-100  top-0 left-0 right-0 z-20 backdrop-blur-xl`}
          >
@@ -126,11 +127,7 @@ export default function Home() {
                </div>
 
                {/* Contact */}
-               <Content
-                  titles="Contact"
-                  id="kontak"
-                  subtitle="Wanna Contact Me?"
-               />
+               <Contact />
             </main>
          </div>
       </div>
